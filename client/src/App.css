@@ -1,0 +1,327 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px 24px 64px;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #4338ca;
+}
+
+.app-header p {
+  margin: 4px 0 24px;
+  color: #64748b;
+}
+
+.global-error {
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 12px 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+/* Summary cards */
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.card-label {
+  font-size: 13px;
+  opacity: 0.85;
+}
+
+.card-value {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.card-income {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+}
+
+.card-expense {
+  background: linear-gradient(135deg, #f87171, #ef4444);
+}
+
+.card-balance-positive {
+  background: linear-gradient(135deg, #6366f1, #4338ca);
+}
+
+.card-balance-negative {
+  background: linear-gradient(135deg, #64748b, #475569);
+}
+
+/* Layout */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+  align-items: start;
+}
+
+.chart-card,
+.transaction-form,
+.transaction-list,
+.savings-goal-form,
+.savings-goal-list {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.chart-card {
+  height: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-card h3 {
+  margin: 0 0 12px;
+}
+
+/* Forms */
+.transaction-form, .savings-goal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.transaction-form h3, .savings-goal-form h3 {
+  margin: 0 0 4px;
+}
+
+.transaction-form label, .savings-goal-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 13px;
+  color: #475569;
+}
+
+.transaction-form input,
+.transaction-form select,
+.savings-goal-form input {
+  padding: 8px 10px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.type-toggle {
+  display: flex;
+  gap: 8px;
+}
+
+.type-toggle button {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.type-toggle button.active.income {
+  background: #22c55e;
+  border-color: #22c55e;
+  color: white;
+}
+
+.type-toggle button.active.expense {
+  background: #ef4444;
+  border-color: #ef4444;
+  color: white;
+}
+
+.submit-btn {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #4338ca;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #3730a3;
+}
+
+.form-error {
+  color: #b91c1c;
+  font-size: 13px;
+  margin: 0;
+}
+
+/* Transaction list */
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+}
+
+.filters input, .filters select {
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  font-size: 13px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.category-pill {
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.amount-income {
+  color: #16a34a;
+  font-weight: 600;
+}
+
+.amount-expense {
+  color: #ef4444;
+  font-weight: 600;
+}
+
+.delete-btn {
+  background: transparent;
+  border: 1px solid #ef4444;
+  color: #ef4444;
+  border-radius: 6px;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.delete-btn:hover {
+  background: #ef4444;
+  color: white;
+}
+
+.empty-state {
+  color: #94a3b8;
+  text-align: center;
+  padding: 24px 0;
+}
+
+/* Savings goals */
+.savings-goal-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.savings-goal-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 14px;
+}
+
+.goal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.goal-header h4 {
+  margin: 0;
+}
+
+.progress-bar {
+  background: #e2e8f0;
+  border-radius: 999px;
+  height: 10px;
+  margin: 10px 0 6px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  background: linear-gradient(90deg, #6366f1, #22c55e);
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.3s ease;
+}
+
+.goal-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #475569;
+}
+
+.goal-date {
+  font-size: 12px;
+  color: #94a3b8;
+  margin: 4px 0;
+}
+
+.goal-add-progress {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.goal-add-progress input {
+  flex: 1;
+  padding: 6px 8px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+}
+
+.goal-add-progress button {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  background: #4338ca;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+  .summary-cards {
+    grid-template-columns: 1fr;
+  }
+}
