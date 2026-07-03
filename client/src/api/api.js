@@ -1,7 +1,7 @@
 const BASE_URL = "https://fintrack-personal-finance-production-c1e6.up.railway.app";
 
 async function request(path, options = {}) {
-  const res = await fetch(`${API_URL}${path}`, {
+  const res = await fetch(`${BASE_URL}${path}`, {
     headers: { 'Content-Type': 'application/json' },
     ...options,
   });
