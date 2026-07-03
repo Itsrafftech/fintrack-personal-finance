@@ -1,4 +1,4 @@
-const BASE_URL = "https://fintrack-personal-finance-production-c1e6.up.railway.app";
+const BASE_URL = "https://fintrack-personal-finance-production-c1e6.up.railway.app/api";
 
 async function request(path, options = {}) {
   const res = await fetch(`${BASE_URL}${path}`, {
