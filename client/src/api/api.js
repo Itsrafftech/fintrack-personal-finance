@@ -1,4 +1,4 @@
-const API_URL = import.meta.env.VITE_API_URL || '/api';
+const BASE_URL = "https://fintrack-personal-finance-production-c1e6.up.railway.app";
 
 async function request(path, options = {}) {
   const res = await fetch(`${API_URL}${path}`, {
